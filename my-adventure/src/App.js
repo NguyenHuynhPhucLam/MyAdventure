@@ -102,14 +102,29 @@ export default function App() {
           <Route path="destination-detail" element={<DestinationDetail />} />
           <Route path="cancel" element={<CancelSuccessfulBooking />} />
           <Route path="make-payment" element={<MakePaymentScreen />} />
-          <Route path="detail-booking-modify" element={<ModifyBookingScreen />}/>
+          <Route
+            path="detail-booking-modify"
+            element={<ModifyBookingScreen />}
+          />
 
           <Route path="company/home" element={<HomePageCompany />} />
-          <Route path="company/vietnam-tours" element={<VietNamTourScreenCompany />}/>
-          <Route path="company/international-tours" element={<InternationalTourScreenCompany />}/>
-          <Route path="company/create-vietnam-tours" element={<CreateVietNamTourScreen />}/>
-          <Route path="company/customer-list" element={<CustomerList />}/>
-          <Route path="company/booking-management" element={<BookingManagement />} />
+          <Route
+            path="company/vietnam-tours"
+            element={<VietNamTourScreenCompany />}
+          />
+          <Route
+            path="company/international-tours"
+            element={<InternationalTourScreenCompany />}
+          />
+          <Route
+            path="company/create-vietnam-tours"
+            element={<CreateVietNamTourScreen />}
+          />
+          <Route path="company/customer-list" element={<CustomerList />} />
+          <Route
+            path="company/booking-management"
+            element={<BookingManagement />}
+          />
           <Route path="company/modify-tour" element={<ModifyTour />} />
 
           <Route path="booking-step-two" element={<BookingStepTwo />} />
@@ -125,7 +140,6 @@ export default function App() {
           />
 
           <Route path="detail-booking" element={<DetailBookingScreen />} />
-            
         </Route>
 
         <Route
@@ -136,10 +150,8 @@ export default function App() {
         <Route path="vietnam-tour-customer" element={<VietNamTourCustomer />} />
 
         <Route path="/phucthinh" element={<MakeBookingScreen />} />
-
       </Routes>
     </BrowserRouter>
     // <SignIn/>
   );
 }
-
